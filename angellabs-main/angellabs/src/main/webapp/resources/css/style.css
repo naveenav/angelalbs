@@ -1,0 +1,454 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;}
+
+body{background-color:#4b5e6f;}
+a, img{border:none;}
+.clearfix{clear:both;}
+.space{maging:0px 3px;}
+
+#container{
+	background-color: #FFF;
+	margin:0px auto;
+	width: 960px;
+	border: 0px solid #333333;
+	box-shadow: 0px 5px 10px #333333;
+	border-radius: 5px;
+}
+h1{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px; color:#000; padding-left:10px;}
+h2{ font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px; color:#fff; padding-left:10px;}
+h3{ font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000; padding-left:10px; padding-top:5px;}
+.enh2{ font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px; color:#323a57; padding-left:10px;}
+
+/* ----------------------------------------------------------------------------------- Home page css ------------------------ */
+/*-----------------------logo block ---  */
+#logo{
+	text-align: left;
+	float: left;
+	height: 40px;
+	width: 210px;
+	margin-top:10px;
+	padding-top: 5px;
+	padding-left:10px;
+}
+/*----------------------------------------------- top icons block ---  */
+#topnavigation{
+	text-align: right;
+	float: right;
+	height: 50px;
+	width: 735px;
+	margin-top:10px;
+}
+#socialnavigation{ margin: 25px 5px 0px 500px; text-align:right; }
+#socialnavigation table{ float:right; height: 10px;}
+#socialnavigation table tr td{ height:10px; vertical-align:middle;}
+#socialnavigation table tr td a{ color:#000; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; text-decoration:none; line-height:20px;}
+#socialnavigation table tr td a img{ float:left;}
+
+/*------------------------------------------------- menu block---  */
+#navigation{width:100%;height:25px;}
+.nav{
+	width:960px; 
+	height:25px;
+	background: url(../images/menubg.png);
+	background-repeat:repeat-x;
+}
+.nav ul {
+	height:25px;
+	display:inline;
+}
+.nav ul li{
+	height:24px;
+	width:115px;
+	float:left;
+	text-align:center;
+	line-height:24px;
+	list-style-type:none;
+	display:block;
+	border-right:1px solid #335093;
+}
+.nav ul li a{
+margin:0px; padding:0px;
+text-decoration:none;
+color:#daf6fa;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+display:block;
+}
+
+.nav ul li a:hover{
+	color:#fff;
+	background: url(../images/menubghover.png);
+	background-repeat:repeat-x;
+	display:block;
+}
+.nav ul li a.active{ font-weight:bold; color:#fff; background: url(../images/menubghover.png);
+	background-repeat:repeat-x}
+
+/*------------------------------------------------- breadcrumb block  ---  */
+
+#bsblock{ border-bottom:1px solid #e8e8e8; height:25px;}
+
+/*------------------------------------------------- breadcrumb  ---  */
+#breadcrumb{
+	text-align: left;
+	float: left;
+	height: 25px;
+	width: 560px;
+	padding-left:10px;
+}
+
+.breadlink{
+	text-align:center;
+	text-decoration:none;
+	color:#003399;
+	line-height:25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+}
+.breadlink:hover{ text-decoration:underline;}
+
+/*------------------------------------------------- searchbox  ---  */
+
+#search{height:25px; float:right;}
+#searchform{
+font-family: Tahoma, Geneva, sans-serif;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border: #ccc 1px solid;
+background: #f1f1f1;
+background: -moz-linear-gradient(top, #f1f1f1 0%, #f1f1f1 0%, #f1f1f1 100%); /* firefox */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(0%,#f1f1f1), color-stop(100%,#f1f1f1)); /* webkit */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#f1f1f1',GradientType=0 ); /* ie */
+width: 225px;
+float: left;
+padding: 2px 2px;
+height:16px;
+margin: 1px 2px 0;
+}
+#searchform #searchinput{
+width: 195px;
+float: left;
+border: 0;
+background: #f9fafb;
+background: -moz-linear-gradient(top, #f9fafb 0%, #f9fafb 0%, #f9fafb 100%); /* firefox */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C4C4C4), color-stop(0%,#EAEAEA), color-stop(100%,#D3D3D3)); /* webkit */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C4C4C4', endColorstr='#D3D3D3',GradientType=0 ); /* ie */
+color: #2a2b2c;
+line-height: 100%;
+font-size: 10px;
+font-family: Tahoma, Geneva, sans-serif;
+height:14px;
+}
+#searchform #searchinput:focus{
+outline:none;
+color:#000;
+height:14px;
+}
+#searchform #searchsubmit{
+background: url(../images/search.png) no-repeat 10px 3px;
+border: 0;
+float: left;
+width: 22px;
+z-index: 100;
+cursor: pointer;
+}
+
+/* ----------------------------------------- Content ---------- */
+#content{}
+
+/* -----------------------------------------  left content ----- */
+#indexleftcontent {
+	float: left;
+	width: 460px;
+	margin: 20px auto 0px;
+
+}
+
+/* -----------------------------------------  Right content ----- */
+#indexrightcontent{
+	float: right;
+	width: 460px;
+	margin: 20px auto 0px;
+}
+.indexcontent{ height: 500px; overflow: auto; margin: 0 30px 0 30px;   box-shadow: 0px 0px 10px #e8e8e8;}
+/*------------------------------------------------- Cblock  ---  */
+
+.cblock{width:960px; margin:20px;}
+.entrepreneursblock, .investorsblock, .companiesblock{width:960px; height:300px; background-color:#f2f3f4;}
+.ensubblock1, .ensubblock2, .ensubblock3, .insubblock1, .insubblock2, .insubblock3, .cosubblock1, .cosubblock2, .cosubblock3{ width:200px; height:250px; float:left; padding:10px; margin:10px;} 
+.ensubblock4, .insubblock4, .cosubblock4{width:200px; height:250px; float:right; padding:10px; margin:10px;}
+
+
+#footer{
+	width: 100%;
+	height:25px;
+	border-top: 3px solid #02a1ce;
+}
+.footernav{
+	width:480px; 
+	height:25px; 
+	float:right;
+
+}
+.footernav ul {
+display:inline;
+background-color:#f1f2f3;
+}
+.footernav ul li{
+	margin:0px 7px;
+	float:right;
+	display:block;
+	line-height:25px;
+	list-style-type:none;
+}
+.footeralink{
+	text-align:center;
+	text-decoration:none;
+	color:#333;
+	line-height:25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+}
+.footeralink:hover{text-decoration:underline; color:#000;}
+
+/* ----------------------------------------------------------------------  Home Page Css End --------------------------- */
+
+/* ----------------------------------------------------------------------  Entrepreneur Page --------------------------- */
+
+#enpageleftcontent {
+	float: left;
+	width: 480px;
+}
+
+#enpagerightcontent {
+	float: right;
+	width: 480px;
+}
+
+.encontent{ height: 500px; overflow: auto; margin: 0 60px 0 90px;   box-shadow: 0px 0px 10px #e8e8e8;}
+
+.enpageloginform{margin:60px auto 50px; padding:10px; width:250px; border: 1px solid #e8e8e8; border-radius: 10px; background-color:#f4f5f5;}
+
+.enpagelogintable{margin:10px auto; padding:5px;}
+
+.enpagetabletitle{text-align:center;
+	text-decoration:none;
+	color:#000;
+	line-height:25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+.userinput{ height:30px;}
+.forminput{ font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#000; opacity:0.7; text-align:left; border: 1px solid #e0dfe0; border-radius: 2px; width:200px; height: 20px; padding-left:10px;}
+.forminput:focus{
+outline:none;
+color:#000;
+opacity:1;
+}
+.aenlink{
+	text-align:center;
+	text-decoration:none;
+	color:#02a1ce;
+	line-height:25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.aenlink:hover{ text-decoration:underline;}
+
+.encontenttitle{
+line-height:25px;
+padding-left:10px;
+height: 25px;
+background-color:#02a1ce;
+box-shadow: 0px 0px 10px #e8e8e8;
+background-image:url(../images/enbg.png);
+background-repeat:repeat-x;
+}
+
+/* ----------------------------------------------------------------------  Entrepreneur Page CSS End --------------------------- */
+
+
+/* ----------------------------------------------------------------------  Invester Page --------------------------- */
+
+#inpageleftcontent {
+	float: left;
+	width: 480px;
+}
+
+#inpagerightcontent {
+	float: right;
+	width: 480px;
+}
+
+.incontent{ height: 500px; overflow:scroll; margin: 0 60px 0 90px; box-shadow: 0px 0px 10px #e8e8e8;}
+
+.inpageloginform{margin:60px auto 50px; padding:10px; width:250px; border: 1px solid #e8e8e8; border-radius: 10px; background-color:#f4f5f5;}
+
+.inpagelogintable{margin:10px auto; padding:5px;}
+
+.inpagetabletitle{text-align:center;
+	text-decoration:none;
+	color:#3d7945;
+	line-height:25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+.ainlink{
+	text-align:center;
+	text-decoration:none;
+	color:#3d7945;
+	line-height:25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.ailink:hover{ text-decoration:underline;}
+.icontenttitle{
+line-height:25px;
+padding-left:10px;
+background-color:#bfd5c0;
+background-image:url(../images/ibg.png);
+background-repeat:repeat-x;
+height: 25px;
+box-shadow: 2px 2px 10px #e8e8e8;
+}
+
+/* ----------------------------------------------------------------------  Invester Page CSS End --------------------------- */
+
+/* ----------------------------------------------------------------------  Companies Page --------------------------- */
+.ccontenttitle{
+text-align:left;
+background-color:#e8e8e8;
+line-height:20px;
+padding-left:10px;
+height: 25px;
+}
+
+#content{}
+.newcompanies{ margin-top:5px; padding-top:5px; background-color:#f2f3f4;}
+.trending{ margin-top:5px; padding-top:5px; background-color:#f2f3f4;}
+.topcompanies{ margin-top:5px; padding-top:5px; background-color:#f2f3f4;}
+
+/* ----------------------------------------------------------------------  Companies Page CSS End --------------------------- */
+
+/* ----------------------------------------------------------------------  Login Page--------------------------- */
+
+#lpageleftcontent {
+	float: left;
+	width: 480px;
+}
+
+#lpagerightcontent {
+	float: right;
+	width: 480px;
+}
+
+.lcontent{ height: 250px; overflow:auto; margin: 0 60px 0 90px; float:right;box-shadow: 0px 0px 10px #e8e8e8;}
+
+.lpageloginform{margin:60px auto 50px; padding:10px; width:250px; border: 1px solid #e8e8e8; border-radius: 10px; background-color:#f4f5f5;}
+
+.lpagelogintable{margin:10px auto; padding:5px;}
+
+.lpagetabletitle{text-align:center;
+	text-decoration:none;
+	color:#02a1ce;
+	line-height:25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+
+.pblack{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px; color:#000000; padding:5px 0px; text-decoration:none;}
+.allink{
+	text-align:center;
+	text-decoration:none;
+	color:#02a1ce;
+	line-height:25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.allink:hover{ text-decoration:underline;}
+
+.lcontenttitle{
+padding: 5px 15px;
+background-color:#02a1ce;
+}
+
+/* ----------------------------------------------------------------------  Login Page CSS End --------------------------- */
+
+/* ----------------------------------------------------------------------  Join Page CSS --------------------------- */
+
+
+#jpageleftcontent {
+	float: left;
+	width: 480px;
+}
+
+#jpagerightcontent {
+	float: right;
+	width: 480px;
+}
+
+.jcontent{ height: 250px; overflow: auto; margin: 0 60px 0 90px;}
+
+.joinform{margin:60px auto 50px; padding:10px; width:250px; border: 1px solid #e8e8e8; border-radius: 10px; background-color:#f4f5f5;}
+
+.jointable{margin:10px auto; padding:5px;}
+
+.jointabletitle{text-align:center;
+	text-decoration:none;
+	color:#02a1ce;
+	line-height:25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+.ajlink{
+	text-align:center;
+	text-decoration:none;
+	color:#02a1ce;
+	line-height:25px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.ajlink:hover{ text-decoration:underline;}
+
+.jcontenttitle{
+padding: 5px 15px;
+background-color:#02a1ce;
+}
+
+/* ----------------------------------------------------------------------  Jon Page CSS End --------------------------- */
+/* ----------------------------------------------------------------------  Profile Page CSS --------------------------- */
+#profileleft{ width:300px; float:left;}
+
+#manageprofile{ margin:20px;}
+#manageprofile ul{ border:2px double #ccc;}
+#manageprofile ul li{padding:5px; list-style-type:none;}
+#manageprofile ul li a{text-decoration:none; color: #000066; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px;}
+#manageprofile ul li a:hover{color:#003366; font-weight:bold;}
+
+#startupprofile{ margin:20px;}
+#startupprofile ul{ border:2px double #ccc;}
+#startupprofile ul li{padding:5px; list-style-type:none;}
+#startupprofile ul li a{text-decoration:none; color: #000066; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px;}
+#startupprofile ul li a:hover{color:#003366; font-weight:bold;}
+
+
+
+
+#profileright{ width:620px; float:right; margin:20px;}
+#userprofile{}
+#userprofiletab{margin-right:20px;}
+#userprofiletab ul{ display:inline; height:30px;}
+#userprofiletab ul li{padding:5px; list-style-type:none; float:left; display:block; border: 1px solid #000000;}
+#userprofiletab ul li a{text-decoration:none; color: #000066; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px;}
+#userprofiletab ul li a:hover{color:#003366; font-weight:bold;}
+#userprofiletab ul li ul{ display:none;}
+#userprofiletab ul li:hover ul{ display:block;}
+#overview{width:600px; height:800px; background-color:#009933;}
+#activity{width:600px; height:800px; background-color:#6666FF;}
+
+/* ----------------------------------------------------------------------  Profile Page CSS End --------------------------- */
